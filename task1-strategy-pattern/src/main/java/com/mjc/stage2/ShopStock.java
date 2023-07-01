@@ -11,7 +11,7 @@ public class ShopStock {
     }
 
     // Write your code here!
-    List executeFilteringStrategy(FilteringStrategy filteringStrategy){
+    public List executeFilteringStrategy(FilteringStrategy filteringStrategy){
         return productList.stream().filter(filteringStrategy::filter).collect(Collectors.toList());
     }
 }
